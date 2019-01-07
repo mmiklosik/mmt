@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Funny Fotobox</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: #3F473F;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.25px;
+        margin: 30px 0 0;
+        position: relative;
+        text-align: center;
+      }
+      h1 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 72px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        line-height: 105px;
+        margin: 0 0 15px;
+      }
+      h2 {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 24px;
+        margin: 30px 0 10px;
+        width: 200px;
+      }
+      body > i {
+        font-size: 24px;
+      }
+      body > p:first-of-type {
+        font-family: 'Amatic SC', cursive;
+        font-size: 24px;
+        line-height: 35px;
+        margin: 20px 0 15px;
+      }
+      body > hr {
+        border-color: #3F473F;
+        border-top: 0;
+        max-width: 650px;
+      }
+      body > p:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 30px auto 100px;
+        max-width: 800px;
+      }
+      body > div:first-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+      body > div:first-of-type > div {
+        margin: 0 50px 30px;
+      }
+      body > div:first-of-type > div > img {
+        width: 160px;
+        border-style: solid;
+        border-width: 20px;
+      }
+      body > div:first-of-type > div:first-of-type > img {
+        border-top-color: #A7B7DF;
+        border-right-color: #FFFFFF;
+        border-bottom-color: #FFFFFF;
+        border-left-color: #A7B7DF;
+      }
+      body > div:first-of-type > div:nth-of-type(2) > img {
+        border-top-color: #FFFFFF;
+        border-right-color: #FFFFFF;
+        border-bottom-color: #F1E2E4;
+        border-left-color: #F1E2E4;
+      }
+      body > div:first-of-type > div:nth-of-type(3) > img {
+        border-color: #F1E2E4;
+      }
+      body > div:first-of-type > div:last-of-type > img {
+        border-top-color: #FFFFFF;
+        border-right-color: #A7B7DF;
+        border-bottom-color: #FFFFFF;
+        border-left-color: #A7B7DF;
+      }
+      body > div:first-of-type > div > p {
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+        width: 200px;
+        text-align: justify;
+      }
+      body > div:last-of-type {
+        display: flex;
+        font-size: 21px;
+        justify-content: center;
+        padding-bottom: 100px;
+      }
+      body > div:last-of-type > div, body > div:last-of-type > div > * {
+        display: inline-block;
+        margin: 0;
+      }
+      body > div:last-of-type i {
+        margin-right: 30px;
+        vertical-align: text-bottom;
+      }
+      body > div:last-of-type > div:first-of-type {
+        margin-right: 75px;
+      }
+      body > div:last-of-type > div:first-of-type i {
+        font-size: 24px;
+      }
+      body > div:last-of-type > div:first-of-type a {
+        color: #3F473F;
+        text-decoration: none;
+      }
+      body > div:last-of-type > div:last-of-type {
+        margin-left: 75px;
+      }
+      body > div:last-of-type > div:last-of-type i {
+        font-size: 25px;
+      }
+      body > p:last-of-type {
+        bottom: 10px;
+        left: 30px;
+        margin: 0;
+        position: absolute;
+      }
+      @media only screen and (max-width: 800px) {
+        body > hr {
+          max-width: 80%;
+        }
+        body > p:nth-of-type(2) {
+          padding: 0 30px;
+        }
+        body > div:last-of-type > div:first-of-type {
+          margin-right: 30px;
+        }
+        body > div:last-of-type > div:last-of-type {
+          margin-left: 30px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        body > div:last-of-type {
+          flex-flow: column;
+        }
+        body > div:last-of-type > div {
+          margin: 0 0 30px 30px;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Funny fotobox</h1>
+    <i class="fa fa-camera"></i>
+    <p>Fotobúdka, ktorá oživí každú akciu</p>
+    <hr>
+    <p>Funny Fotobox je fotobúdka, ktorá je vhodná pre akciu ako napr.: svadby, narodeninové párty, veľtrhy,
+      firemné večierky a pod.Počas akcie bude Funny Fotobox obsluhovať ochotný personál.</p>
+    <div>
+      <div>
+        <img src="ffb3.png">
+        <h2>Ľubovoľné označenie</h2>
+        <p>Každú fotku si môžete označiť názvom, dátumom akcie, logom firmy alebo menami mladomanželov či oslávenca.</p>
+      </div>
+      <div>
+        <img src="ffb2.jpg">
+        <h2>Tematické fotosteny a rekvizity</h2>
+        <p>Ponúkame Vám desiatky originálnych fotostien a široký výber rekvizít, s ktorými si užijete kopec zábavy.</p>
+      </div>
+      <div>
+        <img src="ffb1.png">
+        <h2>Okamžitá tlač</h2>
+        <p>Fotografie vytlačené za pár sekúnd. Počas trvania Vašej akcie je tlač kvalitných fotografií NEOBMEDZENÁ. Rozmer fotografie je 10 x 15.</p>
+      </div>
+      <div>
+        <img src="ffb4.jpg">
+        <h2>Fotky online</h2>
+        <p>Náš Funny Fotobox je po celú dobu online, takže si môžete fotky posielať na email alebo ich zdieľať na FB.</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:info@funnyfotobox.sk">info@funnyfotobox.sk</a>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+421 911 898 788</p>
+      </div>
+    </div>
+    <p>© 2018 Funny Fotobox, Všetky práva vyhradené.</p>
+  </body>
+</html>
