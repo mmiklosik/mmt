@@ -24,14 +24,14 @@ npm run lint
 ### etalon adries
 sluzba
 ```
-.../etalons/address?q= (q = query zadavane do vyhladavacieho policka)
+.../etalons/address?q=zochova (q = query zadavane do vyhladavacieho policka)
 ```
-pre query `zochova`, je prilozeny response (GET.address.invalid.json) => adresy nie su validne, chyba referenceNumber (Orientacne cislo)
+pre query `zochova` je prilozeny response (GET.address.invalid.json) => adresy nie su validne, chyba referenceNumber (Orientacne cislo)
 pre query `zochova 5` je prilozeny response (GET.address.json) => adresy su uz validna
 ### etalon firiem
 sluzba
 ```
-.../etalons/legal-subject?q= (q = query zadavane do vyhladavacieho policka)
+.../etalons/legal-subject?q=habita (q = query zadavane do vyhladavacieho policka)
 ```
 pre query `habita` je prilozeny JSON response (GET.legalSubject.json)
 treba ratat s tym, ze adresy vratene zo sluzby mozu byt nevalidne (napr. chyba referenceNumber)
