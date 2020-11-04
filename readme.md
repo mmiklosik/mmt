@@ -22,21 +22,22 @@ npm run lint
 
 ## Etalony
 ### etalon adries
-    sluzba
-    ```
-    .../etalons/address?q= (q = query zadavane do vyhladavacieho policka)
-    ```
-    pre query `zochova`, je prilozeny response (GET.address.invalid.json) => adresy nie su validne, chyba referenceNumber (Orientacne cislo)
-    pre query `zochova 5` je prilozeny response (GET.address.json) => adresy su uz validna
+sluzba
+```
+.../etalons/address?q= (q = query zadavane do vyhladavacieho policka)
+```
+pre query `zochova`, je prilozeny response (GET.address.invalid.json) => adresy nie su validne, chyba referenceNumber (Orientacne cislo)
+pre query `zochova 5` je prilozeny response (GET.address.json) => adresy su uz validna
 ### etalon firiem
-    sluzba
-    ```
-    .../etalons/legal-subject?q= (q = query zadavane do vyhladavacieho policka)
-    ```
-    pre query `habita` je prilozeny JSON response (GET.legalSubject.json)
-    treba ratat s tym, ze adresy vratene zo sluzby mozu byt nevalidne (napr. chyba referenceNumber)
+sluzba
+```
+.../etalons/legal-subject?q= (q = query zadavane do vyhladavacieho policka)
+```
+pre query `habita` je prilozeny JSON response (GET.legalSubject.json)
+treba ratat s tym, ze adresy vratene zo sluzby mozu byt nevalidne (napr. chyba referenceNumber)
 
-## Zoznam formularovych komponentov a ich selektory 
+## Zoznam formularovych komponentov a ich selektory
+```
 text (.field .text)
 currency (.field .currency)
 email (.field .email)
@@ -59,3 +60,4 @@ date (.field .selector .datetime)
 time (.field .selector .datetime)
 month (.field .selector .datetime)
 year (.field .selector .datetime)
+```
